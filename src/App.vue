@@ -51,6 +51,7 @@ export default {
   //width: 70px;
   padding: 15px 10px;
   background-color: #2c3e50;
+  outline: none;
   color: #fff;
   &:hover {
     background-color: #fff;
@@ -63,7 +64,6 @@ export default {
   padding: 2px 5px;
   color: #fff;
   font-weight: bold;
-  outline: none;
   &:hover {
     background-color: #6a0707;
   }

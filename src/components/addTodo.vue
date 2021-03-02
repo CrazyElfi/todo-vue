@@ -4,9 +4,9 @@
            type="text"
            :value="value"
            v-on="listeners"
-           placeholder="add todo here ..."
-           >
-    <button id="btn">Add todo</button>
+           placeholder="add todo here ...">
+    <button id="btn"
+      @click="$emit('addTodo')">Add todo</button>
   </div>
 </template>
 

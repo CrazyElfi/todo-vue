@@ -1,6 +1,8 @@
 <template>
   <li>
-      {{  todo.id }} {{ todo.text }}
+    <!--    here need checkbox-->
+
+    {{ todo.id }} {{ todo.text }}
     <button class="btn-delete" @click="$emit('remove', todo.id)">x</button>
   </li>
 </template>

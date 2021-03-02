@@ -2,7 +2,8 @@
   <div>
     <addTodo
       v-model="newTodoText"
-    @keydown.enter="addNewTodo"/>
+    @keydown.enter="addNewTodo"
+    @addTodo="addNewTodo"/>
     <ul id="todos"
         v-if="todos.length">
       <todoItem
