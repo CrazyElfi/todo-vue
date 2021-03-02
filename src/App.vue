@@ -28,26 +28,58 @@ export default {
   text-align: center;
   font-size: 20px;
   color: #2c3e50;
-  width: 400px;
+  width: 550px;
+  padding: 0;
   margin: 0 auto;
 }
 
+.input__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 #input {
-  width: 400px;
+  width: 430px;
   padding: 15px;
   border: 1px solid #2c3e50;
   font-size: 18px;
+  outline: none;
 }
+
+#btn {
+  //width: 70px;
+  padding: 15px 10px;
+  background-color: #2c3e50;
+  color: #fff;
+  &:hover {
+    background-color: #fff;
+    color: #2c3e50;
+  }
+}
+
+.btn-delete {
+  background-color: #a71818;
+  padding: 2px 5px;
+  color: #fff;
+  font-weight: bold;
+  outline: none;
+  &:hover {
+    background-color: #6a0707;
+  }
+}
+
 #todos {
-  width: 100%;
+  width: 550px;
   padding: 0;
 }
 #todos li {
-  width: 100%;
   text-align: left;
   list-style: none;
   border: 1px solid #ccc;
   padding: 5px 10px;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 </style>

@@ -1,6 +1,7 @@
 <template>
   <li>
       {{  todo.id }} {{ todo.text }}
+    <button class="btn-delete" @click="$emit('remove', todo.id)">x</button>
   </li>
 </template>
 
@@ -15,5 +16,4 @@ export default {
     }
   }
 }
-
 </script>

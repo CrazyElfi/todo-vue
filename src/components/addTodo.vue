@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="input__wrapper">
     <input id="input"
            type="text"
            :value="value"
            v-on="listeners"
            placeholder="add todo here ..."
            >
-<!--    <button v-on:click.prevent="addNewTodo">Add todo</button>-->
+    <button id="btn">Add todo</button>
   </div>
 </template>
 

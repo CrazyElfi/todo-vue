@@ -8,7 +8,8 @@
       <todoItem
         v-for="todo in todos"
         :key="todo.id"
-        :todo="todo"/>
+        :todo="todo"
+        @remove="removeTodo"/>
     </ul>
     <h4 v-else>
       No tasks! You can add first task.
@@ -57,6 +58,12 @@ export default {
         })
         this.newTodoText = ''
       }
+    },
+    removeTodo (idToRemove) {
+      console.log('remove')
+      this.todos = this.todos.filter(todo => {
+        return todo.id !== idToRemove
+      })
     }
   }
 }
